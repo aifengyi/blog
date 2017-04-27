@@ -8,6 +8,7 @@ app.use(async(req, res, next)=>{
 	console.log(`${req.method} ${req.url} -> ${handleCost}ms`);
 });
 
+app.use(express.static(__dirname + '/static'));
 app.use('/index',express.static(__dirname + '/static/index.html'));
 
 app.get("/haha", (req, res)=>{

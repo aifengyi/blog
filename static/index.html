@@ -1,10 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<title>py&fy</title>
+<meta charset="UTF-8">
+<title>blog - fengyi&penny</title>
+<style>
+	*{padding: 0; margin: 0;}
+	.bg-container{
+		position: relative;
+		width:100%;
+		height:400px;
+		background: url(./img/bg.jpeg) no-repeat 50% -300px;
+
+	}	
+
+	.bg-fang{
+		width: 440px;
+		height: 180px;
+		border-radius: 92px;
+		background-color: rgba(255,255,255,0.7);
+		margin-top:150px;
+		padding-left: 15px;
+		padding-top:20px;
+		position: relative;
+	}
+	.bg-fang1{
+		float: left;
+		margin-left: 200px;
+
+	}
+	.bg-fang2{
+		float: right;
+		margin-right: 200px;
+	}
+	.touxiang{
+		width:160px;
+		height:160px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.touxiang1{
+		background: url(./img/girl.jpeg) 452px -350px;
+	}
+	.touxiang2{
+		background: url(./img/boy.jpeg) 310px -300px;
+	}
+	.touxiang img{
+		position: absolute;
+		left:50%;
+		top:-200px;
+	}
+	.introduce{
+		position: absolute;
+		left: 200px;
+		color: #585858;
+		top:36%;
+	}
+	.introduce p{
+		line-height: 30px;
+	}
+	.word{
+		color: #585858;
+		width:350px;
+		margin: 50px auto;
+	}
+	#clock{
+		width:200px;
+		color: #585858;
+		font-size: 30px;
+		margin:0 auto;
+	}
+</style>
 </head>
 <body>
-	<h1>welcome!</h1>
+<div class="bg-container">
+	<div class="bg-fang bg-fang1">
+		<div class="touxiang touxiang1"></div>
+		<div class="introduce">
+		<h1>Penny</h1>
+		<p>你是不是傻？==></p>
+		</div>
+	</div>
+	<div class="bg-fang bg-fang2">
+		<div class="touxiang touxiang2"></div>
+		<div class="introduce">
+		<h1>Fengyi</h1>
+		<p>小鲜肉！老司机？？</p>
+		</div>
+	</div>	
+</div>
+<h1 class="word">under construction...</h1>
+<div id="clock"></div>
+
+<script type="text/javascript">
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer(){
+	var d=new Date();
+	var t=d.toLocaleTimeString();
+	document.getElementById("clock").innerHTML=t;
+}
+</script>
 </body>
 </html>
