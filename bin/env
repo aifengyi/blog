@@ -6,4 +6,4 @@ register({
 	plugins: ['transform-es2015-modules-commonjs']
 });
 
-require('./server.js');
+require('../server.js');

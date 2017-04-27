@@ -8,8 +8,10 @@ app.use(async(req, res, next)=>{
 	console.log(`${req.method} ${req.url} -> ${handleCost}ms`);
 });
 
-app.get("/index", (req, res)=>{
-	res.send("index");
+app.use('/i',express.static(__dirname + '/static/index.html'));
+
+app.get("/haha", (req, res)=>{
+	res.send("hahahhahahha@$%T#%^.......");
 });
 
 app.use("*", (req, res)=>{
