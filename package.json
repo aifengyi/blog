@@ -1,0 +1,31 @@
+{
+  "name": "love-blog",
+  "version": "0.0.1",
+  "description": "Blog of penny/fengyi",
+  "main": "app.js",
+  "bin": {
+    "love-blog": "env.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=d node bin/env.js",
+    "pro": "NODE_ENV=p node bin/env.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aifengyi/blog.git"
+  },
+  "author": "fengyiai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aifengyi/blog/issues"
+  },
+  "homepage": "https://github.com/aifengyi/blog#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "express": "^4.15.2"
+  }
+}
