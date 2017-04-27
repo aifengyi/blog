@@ -1,3 +1,4 @@
+#!/usr/local/bin/node
 var register = require('babel-core/register');
 require('babel-polyfill');
 register({

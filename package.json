@@ -4,12 +4,12 @@
   "description": "Blog of penny/fengyi",
   "main": "app.js",
   "bin": {
-    "love-blog": "env.js"
+    "love-blog": "env"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=d node bin/env.js",
-    "pro": "NODE_ENV=p node bin/env.js"
+    "dev": "NODE_ENV=d node bin/env",
+    "pro": "NODE_ENV=p node bin/env"
   },
   "repository": {
     "type": "git",
