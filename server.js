@@ -21,4 +21,4 @@ app.use("*", (req, res)=>{
 	res.send("404 page not found!")
 });
 
-app.listen(config.port, ()=>console.log("server is running ..."));
+app.listen(config.port, ()=>console.log("server is running at "+config.port+"..."));
