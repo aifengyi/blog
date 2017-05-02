@@ -12,6 +12,7 @@ app.use(async(req, res, next)=>{
 app.use(express.static(__dirname + '/static'));
 app.use('/index',express.static(__dirname + '/static/index.html'));
 app.use('/browser',express.static(__dirname + '/static/browser.html'));
+app.use('/log',express.static(__dirname + '/static/log.html'));
 
 app.get("/test", (req, res)=>{
 	res.send("hahahhahahha@$%T#%^.......");
