@@ -10,10 +10,10 @@ app.use(async(req, res, next)=>{
 });
 
 app.use(express.static(__dirname + '/static'));
-app.use('/api/index',express.static(__dirname + '/static/index.html'));
-app.use('/api/browser',express.static(__dirname + '/static/browser.html'));
+app.use('/index',express.static(__dirname + '/static/index.html'));
+app.use('/browser',express.static(__dirname + '/static/browser.html'));
 
-app.get("/api/haha", (req, res)=>{
+app.get("/test", (req, res)=>{
 	res.send("hahahhahahha@$%T#%^.......");
 });
 
